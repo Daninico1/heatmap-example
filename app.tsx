@@ -37,13 +37,13 @@ const pointLight2 = new PointLight({
 const lightingEffect = new LightingEffect({ambientLight, pointLight1, pointLight2});
 
 const INITIAL_VIEW_STATE: MapViewState = {
-  longitude: -1.415727,
-  latitude: 52.232395,
-  zoom: 6.6,
-  minZoom: 5,
-  maxZoom: 15,
-  pitch: 40.5,
-  bearing: -27
+  longitude: -71.0589,
+  latitude: 42.3601,
+  zoom: 11.5,
+  minZoom: 9,
+  maxZoom: 20,
+  pitch: 45,
+  bearing: 0
 };
 
 const MAP_STYLE = 'https://basemaps.cartocdn.com/gl/dark-matter-nolabels-gl-style/style.json';
