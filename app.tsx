@@ -37,8 +37,8 @@ const pointLight2 = new PointLight({
 const lightingEffect = new LightingEffect({ambientLight, pointLight1, pointLight2});
 
 const INITIAL_VIEW_STATE: MapViewState = {
-  longitude: -71.0589,
-  latitude: 42.3601,
+  longitude: -71.073062,
+  latitude: 42.351226,
   zoom: 14,
   minZoom: 9,
   maxZoom: 17,
