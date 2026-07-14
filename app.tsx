@@ -15,7 +15,7 @@ import type {Color, PickingInfo, MapViewState} from '@deck.gl/core';
 
 // Source data CSV
 const DATA_URL =
-  'https://raw.githubusercontent.com/visgl/deck.gl-data/master/examples/3d-heatmap/heatmap-data.csv'; // eslint-disable-line
+  'https://raw.githubusercontent.com/Daninico1/heatmap-example/refs/heads/main/example_locations.csv'; // eslint-disable-line
 
 const ambientLight = new AmbientLight({
   color: [255, 255, 255],
