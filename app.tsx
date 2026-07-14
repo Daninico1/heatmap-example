@@ -76,7 +76,7 @@ type DataPoint = [longitude: number, latitude: number];
 export default function App({
   data = null,
   mapStyle = MAP_STYLE,
-  radius = 4,
+  radius = 10,
   upperPercentile = 100,
   coverage = 1
 }: {
@@ -91,10 +91,6 @@ export default function App({
       id: 'heatmap',
       gpuAggregation: true,
       colorRange,
-      getColorWeight: 1,
-      colorAggregation: 'COUNT',
-      getElevationWeight: 1,
-      elevationAggregation: 'COUNT',
       coverage,
       data,
       elevationRange: [0, 3000],
@@ -125,7 +121,14 @@ export default function App({
       controller={true}
       getTooltip={getTooltip}
     >
-      <Map reuseMaps mapStyle={mapStyle} />
+      <Map 
+        reuseMaps 
+        mapStyle={mapStyle} 
+        maxBounds={[
+          [-71.20, 42.25],
+          [-70.95, 42.43]
+      ]}
+        />
     </DeckGL>
   );
 }
