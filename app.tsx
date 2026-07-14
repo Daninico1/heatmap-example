@@ -41,7 +41,7 @@ const INITIAL_VIEW_STATE: MapViewState = {
   latitude: 42.3601,
   zoom: 13,
   minZoom: 9,
-  maxZoom: 30,
+  maxZoom: 14,
   pitch: 45,
   bearing: 0
 };
@@ -78,7 +78,7 @@ export default function App({
   mapStyle = MAP_STYLE,
   radius = 10,
   upperPercentile = 100,
-  coverage = 1
+  coverage = 0.75
 }: {
   data?: DataPoint[] | null;
   mapStyle?: string;
@@ -95,7 +95,7 @@ export default function App({
       data,
       elevationRange: [0, 3000],
       elevationScale: data && data.length ? 50 : 0,
-      extruded: true,
+      extruded: false,
       getPosition: d => d,
       pickable: true,
       radius,
