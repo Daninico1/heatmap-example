@@ -124,10 +124,6 @@ export default function App({
       <Map 
         reuseMaps 
         mapStyle={mapStyle} 
-        maxBounds={[
-          [-71.20, 42.25],
-          [-70.95, 42.43]
-      ]}
         />
     </DeckGL>
   );
