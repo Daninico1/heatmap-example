@@ -76,7 +76,7 @@ type DataPoint = [longitude: number, latitude: number];
 export default function App({
   data = null,
   mapStyle = MAP_STYLE,
-  radius = 10,
+  radius = 0.5,
   upperPercentile = 100,
   coverage = 1
 }: {
