@@ -41,7 +41,7 @@ const INITIAL_VIEW_STATE: MapViewState = {
   latitude: 42.3601,
   zoom: 13,
   minZoom: 9,
-  maxZoom: 30,
+  maxZoom: 17,
   pitch: 45,
   bearing: 0
 };
@@ -68,7 +68,7 @@ function getTooltip({object}: PickingInfo) {
   return `\
     latitude: ${Number.isFinite(lat) ? lat.toFixed(6) : ''}
     longitude: ${Number.isFinite(lng) ? lng.toFixed(6) : ''}
-    ${count} Accidents`;
+    ${count} Wi-Fi Networks`;
 }
 
 type DataPoint = [longitude: number, latitude: number];
