@@ -39,7 +39,7 @@ const lightingEffect = new LightingEffect({ambientLight, pointLight1, pointLight
 const INITIAL_VIEW_STATE: MapViewState = {
   longitude: -71.0589,
   latitude: 42.3601,
-  zoom: 13,
+  zoom: 11,
   minZoom: 9,
   maxZoom: 17,
   pitch: 45,
@@ -62,9 +62,7 @@ function getTooltip({object}: PickingInfo) {
     return null;
   }
 
-  return `
-    ${object.count} Wi-Fi Networks
-  `;
+  return `${object.count} Wi-Fi Networks`;
 }
 
 type DataPoint = [longitude: number, latitude: number];
