@@ -15,7 +15,7 @@ import type {Color, PickingInfo, MapViewState} from '@deck.gl/core';
 
 // Source data CSV
 const DATA_URL =
-  'https://raw.githubusercontent.com/Daninico1/heatmap-example/refs/heads/main/example_locations.csv'; // eslint-disable-line
+  'https://raw.githubusercontent.com/Daninico1/heatmap-example/refs/heads/main/testing'; // eslint-disable-line
 
 const ambientLight = new AmbientLight({
   color: [255, 255, 255],
@@ -39,9 +39,9 @@ const lightingEffect = new LightingEffect({ambientLight, pointLight1, pointLight
 const INITIAL_VIEW_STATE: MapViewState = {
   longitude: -71.0589,
   latitude: 42.3601,
-  zoom: 13,
+  zoom: 50,
   minZoom: 9,
-  maxZoom: 30,
+  maxZoom: 70,
   pitch: 45,
   bearing: 0
 };
