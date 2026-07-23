@@ -15,7 +15,7 @@ import type {Color, PickingInfo, MapViewState} from '@deck.gl/core';
 
 // Source data CSV
 const DATA_URL =
-  'https://raw.githubusercontent.com/Daninico1/heatmap-example/refs/heads/main/previous-data.csv'; // eslint-disable-line
+  'https://raw.githubusercontent.com/Daninico1/heatmap-example/refs/heads/main/WifiRuns.csv'; // eslint-disable-line
 
 const ambientLight = new AmbientLight({
   color: [255, 255, 255],
